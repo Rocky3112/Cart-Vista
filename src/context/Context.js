@@ -4,7 +4,6 @@ import {  cartReducer, productReducer, } from './Reducers';
 const faker = require('faker');
 
 const Cart = createContext();
-faker.seed(99);
 
 const Context = ({ children }) => {
   const products = [...Array(20)].map(() => ({

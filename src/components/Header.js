@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
-import "../App.css";
+import "./styles.css";
 
 const Header = () => {
   const {
@@ -23,13 +23,13 @@ const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
       <Container>
-        <Navbar.Brand>
-          <Link to="/">Shopping Cart</Link>
+        <Navbar.Brand className="font-weight-bold">
+          <Link to="/">CART VISTA</Link>
         </Navbar.Brand>
         {useLocation().pathname.split("/")[1] !== "cart" && (
           <Navbar.Text className="search">
             <FormControl
-              style={{ width: 500 }}
+              style={{ width: 400 }}
               type="search"
               placeholder="Search a product..."
               className="m-auto"
@@ -43,7 +43,7 @@ const Header = () => {
             />
           </Navbar.Text>
         )}
-        <Nav>
+       <Nav>
           <Dropdown alignRight>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />

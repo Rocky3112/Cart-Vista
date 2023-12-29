@@ -1,6 +1,5 @@
 import { Button, Form } from "react-bootstrap";
-
-import '../App.css'
+import "./styles.css"
 import Rating from "./Rating";
 import { CartState } from "../context/Context";
 

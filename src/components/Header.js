@@ -2,9 +2,15 @@ import React from 'react'
 import { Badge, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap'
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { CartState } from '../context/Context';
 
 
 const Header = () => {
+  const {
+    state: { cart },
+  } = CartState();
+
+  console.log(cart);
   return (
   <Navbar bg='dark' variant='dark' style={{height:80}}>
     <Container>

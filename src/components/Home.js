@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { CartState } from '../context/Context'
+// import CountContext from '../context/CountContext'
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
 
-export default Home
+const {
+  state: { products },
+  
+} = CartState();
+
+console.log(products);
+   
+  return (
+    <div>home</div>
+  )
+  
+};
+
+export default Home;

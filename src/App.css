@@ -2,6 +2,7 @@ a{
   text-decoration: none !important;
   color: inherit !important;
 }
+/* header styles */
 
 .header {
   display: block;
@@ -72,4 +73,34 @@ a{
 
 .summary {
   width: 30%;
+}
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 58%;
+    padding: 0;
+  }
+
+  .search {
+    display: none !important;
+  }
+
+  .products {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 import  { createContext, useContext, useReducer } from 'react'
-import {  cartReducer, productReducer } from './Reducers';
+import {  cartReducer, } from './Reducers';
 // import { CountContext } from './CountContext';
 const faker = require('faker');
 

@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import { CartState } from '../context/Context'
+// import React, { useState } from 'react'
 // import CountContext from '../context/CountContext'
+import { CartState } from '../context/Context'
+import SingleProduct from './SingleProduct';
 
 const Home = () => {
 
@@ -12,7 +13,13 @@ const {
 console.log(products);
    
   return (
-    <div>home</div>
+    <div className="home">
+      <div className="productContainer">
+        {products.map((prod) => (
+          <SingleProduct prod={prod} key={prod.id} />
+        ))}
+      </div>
+    </div>
   )
   
 };

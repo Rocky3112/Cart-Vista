@@ -1,13 +1,15 @@
 import React from 'react'
 import { Badge, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap'
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
-  return <Navbar bg='dark' variant='dark' style={{height:80}}>
+  return (
+  <Navbar bg='dark' variant='dark' style={{height:80}}>
     <Container>
         <Navbar.Brand>
-            <a href="/">Cart Vista</a>
+            <Link href="/">Cart Vista</Link>
         </Navbar.Brand>
         <Navbar.Text className='search'>
             <FormControl style={{width:500}} placeholder='Search a produch' className='m-auto'>
@@ -16,7 +18,7 @@ const Header = () => {
         </Navbar.Text>
 
         <Nav>
-           <Dropdown alignRight>
+           <Dropdown  alignright ='true'>
            <Dropdown.Toggle variant='success'>
            <FaShoppingCart  color='white' fontSize="25px"/>
            <Badge> {10}</Badge>
@@ -29,6 +31,6 @@ const Header = () => {
         </Nav>
     </Container>
   </Navbar>
-}
+)}
 
 export default Header

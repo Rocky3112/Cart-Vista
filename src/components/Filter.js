@@ -50,7 +50,7 @@ const [rate,setRate] =useState(3)
         <label style={{ paddingRight: 10 }}>Rating: </label>
         <Rating
           rating={rate}
-          onClick={(i)=> setRate(i)}
+          onClick={(i)=> setRate(i+1)}
           
           style={{ cursor: "pointer" }}
         />
